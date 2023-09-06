@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="filename.css" type="text/css">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-image: url('./forestImg.webp');
+        background-size: cover;
+    }
+    div.main{
+        width: 400px;
+        margin: 30px auto 30px auto;
+
+    }
+    h1{
+        text-align: center;
+        padding-top: 10px;
+        font-family: sans-serif;
+        font-size: 20px;
+    }
+    div.register{
+        background-color: rgba(0,0,0,0.5);
+        width: 100%;
+        font-size: 12px;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+        color: #ffff;
+    }
+   
+    form#register{
+        margin: 40px;
+    }
+    label{
+        font-family: sans-serif;
+        font-size: 18px;
+        font-style: italic;
+    }
+    input#name{
+        width: 300px;
+        border: 1px solid #dddd;
+        border-radius: 3px;
+        outline: 0;
+        padding: 7px;
+        background-color: #ffff;
+        box-shadow: inset 1px 1px 5px rgba(0, 0,0,0.3);
+    }
+    input#submit{
+        width: 200px;
+        padding: 7px;
+        font-size: 16px;
+        font-family: sans-serif;
+        font-weight: 600;
+        border: none;
+        border-radius: 3px;
+        background-color: rgba(250, 100, 0, 0.8);
+        color: #ffff;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        cursor: pointer;
+        margin: auto;
+        box-shadow: 1px 1px 1px rgba(0, 0,0,0.3);
+    }
+    label,span,h1{
+        text-shadow: 1px 1px 5px rgba(0, 0,0,0.3);
+    }
+
+</style>
+<body>
+    <div>
+        <div class="main">
+            <div class="register">
+                <h1>Register Here</h1>
+                <form id="register" method="post">
+                    <label>First Name : </label>
+                    <br>
+                    <input type="text" name="fname" id="name" placeholder="Enter your First Name:">
+                    <br><br>
+                    <label>Last Name : </label>
+                    <br>
+                    <input type="text" name="lname" id="name" placeholder="Enter your Last Name:">
+                    <br><br>
+                    <label>Enter Your Age : </label>
+                    <br>
+                    <input type="number" name="age" id="name" placeholder="How old are You?">
+                    <br><br>
+                    <label>Email : </label>
+                    <br>
+                    <input type="email" name="email" id="name" placeholder="Enter your Valid Email">
+                    <br><br>
+                    <label>Gender : </label>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="gender" id="male">
+                    <span id="male">Male</span>
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="gender" id="female">
+                    <span id="female">Female</span>
+                    <br><br>
+                    <input type="submit" value="Submit" name="submit" id="submit">
+
+                </form>
+            </div><!--end register-->
+        </div><!--end main-->
+    </div>
+</body>
+</html>
